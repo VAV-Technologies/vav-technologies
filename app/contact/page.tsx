@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, Mail, MapPin, Linkedin, Building2, Layers } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Linkedin, Building2 } from "lucide-react";
 import ContentViewport from "@/components/layout/ContentViewport";
 import SectionPanel from "@/components/layout/SectionPanel";
 import SectionBadge from "@/components/shared/SectionBadge";
@@ -35,8 +35,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="mt-5 text-base font-light leading-relaxed text-muted-gray">
-              Considering a merger, an acquisition, or an investment — or exploring a partnership with one
-              of our companies? We&apos;d be glad to hear from you.
+              Considering a merger, an acquisition, or an investment — or exploring a partnership with our
+              M&amp;A advisory firm, Nobridge? We&apos;d be glad to hear from you.
             </p>
           </div>
         </SectionPanel>
@@ -88,26 +88,15 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Our companies */}
+            {/* Our company */}
             <div className="flex flex-col gap-4 border border-outline-light bg-off-white p-8">
               <div>
-                <SectionBadge>Our Companies</SectionBadge>
-                <h2 className="mt-4 text-2xl font-normal tracking-tight">Reach a Company Directly</h2>
+                <SectionBadge>Our Company</SectionBadge>
+                <h2 className="mt-4 text-2xl font-normal tracking-tight">Reach Nobridge Directly</h2>
                 <p className="mt-3 text-sm font-light leading-relaxed text-body-gray">
-                  Looking for one of our businesses in particular? Visit them directly.
+                  Looking for our M&amp;A advisory firm? Visit Nobridge directly.
                 </p>
               </div>
-
-              <a href={SITE.companies.acfi.url} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border border-outline-light bg-panel-white p-5 transition-colors hover:border-primary-black/20">
-                <div className="flex items-center gap-4">
-                  <IconCircle icon={Layers} />
-                  <div>
-                    <h3 className="text-sm font-semibold">ACFI</h3>
-                    <p className="text-xs text-muted-gray">Community &amp; database of M&amp;A firms</p>
-                  </div>
-                </div>
-                <ArrowUpRight size={16} className="text-muted-gray transition-colors group-hover:text-primary-black" />
-              </a>
 
               <a href={SITE.companies.nobridge.url} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border border-outline-light bg-panel-white p-5 transition-colors hover:border-primary-black/20">
                 <div className="flex items-center gap-4">

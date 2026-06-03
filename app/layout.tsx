@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | PT VAV Technologies Indonesia",
   },
   description:
-    "PT VAV Technologies Indonesia is a holding company moving Indonesia forward through mergers, acquisitions, and strategic investment — operating ACFI and Nobridge.",
+    "PT VAV Technologies Indonesia is the parent company of Nobridge, an M&A advisory firm — moving Indonesia forward through mergers, acquisitions, and strategic investment.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
@@ -43,7 +43,6 @@ const organizationJsonLd = {
     "Holding company moving Indonesia forward through mergers, acquisitions, and strategic investment.",
   areaServed: "Indonesia",
   subOrganization: [
-    { "@type": "Organization", name: "ACFI", url: SITE.companies.acfi.url },
     { "@type": "Organization", name: "Nobridge", url: SITE.companies.nobridge.url },
   ],
 };

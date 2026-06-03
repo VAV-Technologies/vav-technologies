@@ -15,7 +15,6 @@ export const SITE = {
   location: "Jakarta, Indonesia",
   linkedin: "https://www.linkedin.com/",
   companies: {
-    acfi: { name: "ACFI", url: "https://acfi.asia" },
     nobridge: { name: "Nobridge", url: "https://nobridge.co" },
   },
 } as const;

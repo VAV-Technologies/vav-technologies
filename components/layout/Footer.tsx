@@ -17,9 +17,8 @@ const footerColumns = [
     ],
   },
   {
-    title: "OUR COMPANIES",
+    title: "OUR COMPANY",
     links: [
-      { label: "ACFI", href: SITE.companies.acfi.url, external: true },
       { label: "Nobridge", href: SITE.companies.nobridge.url, external: true },
     ],
   },
@@ -53,7 +52,7 @@ export default function Footer() {
                 Get in Touch
               </PrimaryButton>
               <GhostButton href="/company" variant="dark">
-                Our Companies
+                Meet Nobridge
               </GhostButton>
             </div>
           </div>

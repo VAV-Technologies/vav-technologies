@@ -1,4 +1,4 @@
-import { ArrowUpRight, Building2, Globe, TrendingUp, Handshake, LineChart, Landmark, Target, Layers } from "lucide-react";
+import { ArrowUpRight, Building2, Globe, TrendingUp, Handshake, LineChart, Landmark, Target } from "lucide-react";
 import ContentViewport from "@/components/layout/ContentViewport";
 import SectionPanel from "@/components/layout/SectionPanel";
 import SectionBadge from "@/components/shared/SectionBadge";
@@ -14,25 +14,6 @@ import FirmLogoPlaceholder from "@/components/shared/FirmLogoPlaceholder";
 import { IMAGES } from "@/lib/images";
 import { SITE } from "@/lib/site";
 
-const companies = [
-  {
-    name: "ACFI",
-    tag: "Community & Directory",
-    href: SITE.companies.acfi.url,
-    image: IMAGES.companies.acfi,
-    description:
-      "A community and database of M&A advisory firms — connecting dealmakers, advisors, and capital across the region.",
-  },
-  {
-    name: "Nobridge",
-    tag: "M&A Advisory",
-    href: SITE.companies.nobridge.url,
-    image: IMAGES.companies.nobridge,
-    description:
-      "A mergers & acquisitions advisory firm guiding buy-side and sell-side transactions from origination through close.",
-  },
-];
-
 export default function Home() {
   return (
     <div className="flex flex-col gap-4 py-4">
@@ -47,11 +28,12 @@ export default function Home() {
             Moving Indonesia Forward
           </h1>
           <p className="mt-5 text-base font-light leading-relaxed text-muted-gray sm:text-lg">
-            PT VAV Technologies Indonesia is a holding company building and growing the nation through
-            mergers, acquisitions, and strategic investment — operating ACFI and Nobridge.
+            PT VAV Technologies Indonesia is the parent company of Nobridge, our mergers &amp; acquisitions
+            advisory firm — building and growing the nation through M&amp;A, corporate finance, and
+            strategic investment.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <PrimaryButton href="/company" variant="light">Explore Our Companies</PrimaryButton>
+            <PrimaryButton href="/company" variant="light">Meet Nobridge</PrimaryButton>
             <GhostButton href="/contact" variant="dark">Get in Touch</GhostButton>
           </div>
         </div>
@@ -62,7 +44,7 @@ export default function Home() {
         <SectionPanel variant="white">
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-0 sm:divide-x sm:divide-outline-light">
             {[
-              { value: "2", label: "Group Companies", icon: Building2 },
+              { value: "Nobridge", label: "Our M&A Firm", icon: Building2 },
               { value: "M&A", label: "Core Discipline", icon: Handshake },
               { value: "Jakarta", label: "Headquarters", icon: Landmark },
               { value: "Asia-Pacific", label: "Market Reach", icon: Globe },
@@ -84,17 +66,17 @@ export default function Home() {
             <div>
               <SectionBadge>Why PT VAV Technologies Indonesia</SectionBadge>
               <h2 className="mt-5 text-3xl font-normal tracking-tight sm:text-4xl">
-                Building the Companies That Build Indonesia
+                Built to Grow Indonesian Business
               </h2>
               <p className="mt-4 text-sm font-light leading-relaxed text-body-gray">
-                We back and operate businesses at the heart of Indonesia&apos;s growth story — bringing
-                capital, advisory expertise, and a long-term view to mergers, acquisitions, and investment.
+                We bring capital, advisory expertise, and a long-term view to mergers, acquisitions, and
+                investment — led by our M&amp;A advisory firm, Nobridge.
               </p>
             </div>
             <div className="flex flex-col gap-4">
               {[
                 { icon: Handshake, title: "Mergers & Acquisitions", desc: "End-to-end advisory across buy-side and sell-side transactions through our firm, Nobridge." },
-                { icon: Layers, title: "A Connected Network", desc: "ACFI links advisory firms, dealmakers, and capital into one community and database." },
+                { icon: Landmark, title: "Corporate Finance", desc: "Structuring capital and deals so the right businesses can scale with confidence." },
                 { icon: TrendingUp, title: "Strategic Investment", desc: "Patient capital deployed into businesses and opportunities that strengthen the economy." },
                 { icon: Target, title: "Indonesia-First", desc: "Locally rooted in Jakarta with a focus on the country's long-term development." },
               ].map((item) => (
@@ -114,39 +96,40 @@ export default function Home() {
         </SectionPanel>
       </ContentViewport>
 
-      {/* Our Companies — muted variant */}
+      {/* Our Company — Nobridge — muted variant */}
       <ContentViewport>
         <SectionPanel variant="muted">
           <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <div>
-              <SectionBadge>Our Companies</SectionBadge>
-              <h2 className="mt-4 text-3xl font-normal tracking-tight">Two Companies, One Mission</h2>
+              <SectionBadge>Our Company</SectionBadge>
+              <h2 className="mt-4 text-3xl font-normal tracking-tight">Meet Nobridge</h2>
             </div>
-            <GhostButton href="/company">Learn About Both</GhostButton>
+            <GhostButton href="/company">Learn More</GhostButton>
           </div>
-          <div className="mt-10 grid gap-4 lg:grid-cols-2">
-            {companies.map((company) => (
-              <div key={company.name} className="flex flex-col border border-outline-light bg-panel-white transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-black/20">
-                <div className="relative h-44 overflow-hidden">
-                  <GrayscaleImage src={company.image} alt={company.name} fill sizes="(max-width: 1024px) 100vw, 50vw" className="h-full w-full" />
-                </div>
-                <div className="flex flex-1 flex-col gap-4 p-6">
-                  <div className="flex items-center gap-4">
-                    <FirmLogoPlaceholder name={company.name} size="sm" />
-                    <div>
-                      <h3 className="text-base font-semibold">{company.name}</h3>
-                      <p className="text-xs uppercase tracking-wider text-muted-gray">{company.tag}</p>
-                    </div>
-                  </div>
-                  <p className="text-sm font-light leading-relaxed text-body-gray">{company.description}</p>
-                  <div className="mt-auto flex items-center gap-5 pt-2">
-                    <a href={company.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs font-medium uppercase tracking-widest text-primary-black hover:text-dark-gray">
-                      Visit Site <ArrowUpRight size={12} />
-                    </a>
-                  </div>
+          <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div className="relative h-56 overflow-hidden rounded-[10px] sm:h-72 lg:h-80">
+              <GrayscaleImage src={IMAGES.companies.nobridge} alt="Nobridge" fill sizes="(max-width: 1024px) 100vw, 50vw" className="h-full w-full" />
+            </div>
+            <div>
+              <div className="flex items-center gap-4">
+                <FirmLogoPlaceholder name="Nobridge" size="md" />
+                <div>
+                  <h3 className="text-xl font-semibold">Nobridge</h3>
+                  <p className="text-xs uppercase tracking-wider text-muted-gray">M&amp;A Advisory</p>
                 </div>
               </div>
-            ))}
+              <p className="mt-5 text-sm font-light leading-relaxed text-body-gray">
+                Nobridge is our mergers &amp; acquisitions advisory firm, guiding founders and corporates
+                through buy-side and sell-side transactions — from origination and valuation through
+                negotiation and close.
+              </p>
+              <div className="mt-6 flex items-center gap-5">
+                <PrimaryButton href={SITE.companies.nobridge.url}>Visit Nobridge</PrimaryButton>
+                <a href="/company" className="flex items-center gap-1 text-xs font-medium uppercase tracking-widest text-primary-black hover:text-dark-gray">
+                  Learn More <ArrowUpRight size={12} />
+                </a>
+              </div>
+            </div>
           </div>
         </SectionPanel>
       </ContentViewport>
@@ -161,8 +144,8 @@ export default function Home() {
               How We Help the Country Grow
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-sm font-light leading-relaxed text-muted-gray">
-              We pursue growth through three disciplines — combining advisory, community, and capital
-              to move Indonesian business forward.
+              We pursue growth through three disciplines — combining advisory, finance, and capital to
+              move Indonesian business forward.
             </p>
           </div>
           <div className="relative z-10 mt-12 grid gap-4 sm:grid-cols-3">

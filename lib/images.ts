@@ -20,9 +20,8 @@ export const IMAGES = {
     story: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
   },
 
-  // Our companies (cards + company page)
+  // Nobridge (card + company page)
   companies: {
-    acfi: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
     nobridge: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
   },
 } as const;
