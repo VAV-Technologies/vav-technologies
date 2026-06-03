@@ -10,8 +10,7 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL
 export const SITE = {
   legalName: "PT VAV Technologies Indonesia",
   shortName: "PT VAV Technologies Indonesia",
-  // TODO: replace with the real inbox — placeholder until confirmed
-  email: "info@vavtech.id",
+  email: "business@nobridge.co",
   location: "Jakarta, Indonesia",
   linkedin: "https://www.linkedin.com/",
   companies: {
