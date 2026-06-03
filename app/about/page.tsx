@@ -25,7 +25,6 @@ const aboutJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "PT VAV Technologies Indonesia",
-  alternateName: "VAV Technologies",
   url: SITE_URL,
   description:
     "Holding company moving Indonesia forward through mergers, acquisitions, and strategic investment.",
@@ -48,7 +47,7 @@ export default function AboutPage() {
           <CornerMark variant="dark" />
           <Breadcrumb items={[{ label: "About Us" }]} />
           <div className="relative z-10 mt-6 mx-auto max-w-3xl text-center">
-            <SectionBadge variant="dark">About VAV</SectionBadge>
+            <SectionBadge variant="dark">About PT VAV Technologies Indonesia</SectionBadge>
             <h1 className="mt-5 text-3xl font-medium leading-[1.1] tracking-[-2px] text-panel-white sm:text-4xl lg:text-5xl">
               A Holding Company Built to Grow Indonesia
             </h1>
@@ -120,7 +119,7 @@ export default function AboutPage() {
             <SectionBadge>Our Story</SectionBadge>
             <h2 className="mt-5 text-3xl font-normal tracking-tight">One Group, Two Companies</h2>
             <div className="relative mt-6 h-40 overflow-hidden rounded-[10px] sm:h-52 lg:h-64">
-              <GrayscaleImage src={IMAGES.about.story} alt="VAV Technologies team" fill sizes="(max-width: 768px) 100vw, 768px" className="h-full w-full" />
+              <GrayscaleImage src={IMAGES.about.story} alt="PT VAV Technologies Indonesia team" fill sizes="(max-width: 768px) 100vw, 768px" className="h-full w-full" />
             </div>
             <div className="mt-8 flex flex-col gap-6 text-sm font-light leading-relaxed text-body-gray">
               <p>

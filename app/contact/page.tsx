@@ -77,7 +77,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-xs font-medium uppercase tracking-widest text-muted-gray">LinkedIn</p>
                   <p className="mt-1 flex items-center gap-1 text-sm font-medium text-primary-black group-hover:text-dark-gray">
-                    Follow VAV Technologies
+                    Follow PT VAV Technologies Indonesia
                     <ArrowUpRight size={14} className="opacity-0 transition-opacity group-hover:opacity-100" />
                   </p>
                 </div>

@@ -9,7 +9,7 @@ import { SITE_URL, SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: {
     default: "PT VAV Technologies Indonesia — Moving Indonesia Forward",
-    template: "%s | VAV Technologies",
+    template: "%s | PT VAV Technologies Indonesia",
   },
   description:
     "PT VAV Technologies Indonesia is a holding company moving Indonesia forward through mergers, acquisitions, and strategic investment — operating ACFI and Nobridge.",
@@ -38,7 +38,6 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "PT VAV Technologies Indonesia",
-  alternateName: "VAV Technologies",
   url: SITE_URL,
   description:
     "Holding company moving Indonesia forward through mergers, acquisitions, and strategic investment.",

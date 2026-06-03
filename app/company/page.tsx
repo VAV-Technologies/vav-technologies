@@ -64,7 +64,7 @@ export default function CompanyPage() {
               <SectionBadge>The Group</SectionBadge>
               <h2 className="mt-5 text-3xl font-normal tracking-tight">A Holding Company for Indonesian Growth</h2>
               <p className="mt-4 text-sm font-light leading-relaxed text-body-gray">
-                VAV Technologies brings advisory, community, and capital together under one roof. Each
+                PT VAV Technologies Indonesia brings advisory, community, and capital together under one roof. Each
                 company stands on its own, but together they let us serve the market end-to-end — from
                 advising a single transaction to building the wider network and investment that helps
                 Indonesian businesses scale.
@@ -175,7 +175,7 @@ export default function CompanyPage() {
           <div className="relative z-10 flex flex-col items-center gap-6 text-center lg:flex-row lg:justify-between lg:text-left">
             <div>
               <h2 className="text-2xl font-normal tracking-tight text-panel-white sm:text-3xl">
-                Work with the VAV group
+                Work with PT VAV Technologies Indonesia
               </h2>
               <p className="mt-2 text-sm font-light text-muted-gray">
                 Tell us about your transaction, mandate, or partnership idea.
@@ -183,7 +183,7 @@ export default function CompanyPage() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
               <PrimaryButton href="/contact" variant="light">Get in Touch</PrimaryButton>
-              <GhostButton href="/about" variant="dark">About VAV</GhostButton>
+              <GhostButton href="/about" variant="dark">About PT VAV Technologies Indonesia</GhostButton>
             </div>
           </div>
         </SectionPanel>

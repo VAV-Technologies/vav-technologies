@@ -27,8 +27,8 @@ const footerColumns = [
 
 function Wordmark() {
   return (
-    <span className="text-lg font-semibold tracking-tight text-primary-black sm:text-xl">
-      VAV<span className="font-light text-body-gray">&nbsp;Technologies</span>
+    <span className="text-base font-semibold tracking-tight text-primary-black sm:text-lg">
+      PT VAV<span className="font-light text-body-gray">&nbsp;Technologies Indonesia</span>
     </span>
   );
 }
@@ -45,7 +45,7 @@ export default function Footer() {
                 Let&apos;s build Indonesia&apos;s future.
               </h2>
               <p className="mt-2 text-sm font-light text-muted-gray">
-                Partner with VAV Technologies on your next merger, acquisition, or investment.
+                Partner with PT VAV Technologies Indonesia on your next merger, acquisition, or investment.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">

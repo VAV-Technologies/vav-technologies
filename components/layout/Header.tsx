@@ -14,8 +14,8 @@ const navLinks = [
 
 function Wordmark() {
   return (
-    <span className="text-lg font-semibold tracking-tight text-primary-black sm:text-xl">
-      VAV<span className="font-light text-body-gray">&nbsp;Technologies</span>
+    <span className="whitespace-nowrap text-sm font-semibold tracking-tight text-primary-black sm:text-base">
+      PT VAV<span className="font-light text-body-gray">&nbsp;Technologies Indonesia</span>
     </span>
   );
 }

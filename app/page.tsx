@@ -77,12 +77,12 @@ export default function Home() {
         </SectionPanel>
       </ContentViewport>
 
-      {/* Why VAV — 2-column layout */}
+      {/* Why PT VAV Technologies Indonesia — 2-column layout */}
       <ContentViewport>
         <SectionPanel variant="white">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <SectionBadge>Why VAV</SectionBadge>
+              <SectionBadge>Why PT VAV Technologies Indonesia</SectionBadge>
               <h2 className="mt-5 text-3xl font-normal tracking-tight sm:text-4xl">
                 Building the Companies That Build Indonesia
               </h2>
@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
               ))}
               <div className="relative mt-2 h-40 overflow-hidden rounded-[10px] sm:h-52 lg:h-64">
-                <GrayscaleImage src={IMAGES.home.trust} alt="VAV Technologies" fill sizes="(max-width: 1024px) 100vw, 50vw" className="h-full w-full" />
+                <GrayscaleImage src={IMAGES.home.trust} alt="PT VAV Technologies Indonesia" fill sizes="(max-width: 1024px) 100vw, 50vw" className="h-full w-full" />
               </div>
             </div>
           </div>
